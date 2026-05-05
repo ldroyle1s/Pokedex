@@ -12,7 +12,16 @@ async function fetchData(){
         const data = await response.json();
         const pokemonSprite = data.sprites.front_default;
         const imgElement = document.getElementById("pokemonSprite");
+        const pokemonCry = data.cries.latest;
+        const audioElement = document.getElementById("pokemonCry");
+        const pokemonHeight = (data.height / 3.048).toFixed(2);
+        const pokemonWeight = (data.weight / 4.5359237).toFixed(2);
 
+        document.getElementById("pokemonHeight").innerText = pokemonHeight + " Feet";
+        document.getElementById("pokemonWeight").innerText = pokemonWeight +" Pounds";
+
+        audioElement.src = pokemonCry;
+        audioElement.style.display ="block";
         imgElement.src = pokemonSprite;
         imgElement.style.display = "block";
         console.log(data);
