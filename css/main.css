@@ -35,13 +35,13 @@ header{
 
 .parent {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
 }
 .image1 {
   position: relative;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
 }
 .image2 {
   position: absolute;
@@ -62,10 +62,10 @@ header{
 .fetchButton{
     position: absolute;
     top: 69%;
-    left: 5.9%;
+    left: 6.2%;
     border-radius: 50%;
     padding: 25px 20px;
-    background-color: black;
+    background: none;
     color: white;
     border: none;
     max-width: 100%;
@@ -92,4 +92,39 @@ header{
     left: 1070px;
     color: white;
     text-align: center;
+}
+
+#pokemonHp{
+    position: absolute;
+    top: 32%;
+    left: 62%;
+}
+#pokemonAtk{
+    position: absolute;
+    top: 32%;
+    left: 67%;
+
+}
+#pokemonDef{
+    position: absolute;
+    top: 32%;
+    left: 72%;
+}
+#pokemonSpAtk{
+    position: absolute;
+    top: 32%;
+    left: 77%;
+
+}
+#pokemonSpDef{
+    position: absolute;
+    top: 32%;
+    left: 82%;
+
+}
+#pokemonSpeed{
+    position: absolute;
+    top: 32%;
+    left: 87%;
+
 }
